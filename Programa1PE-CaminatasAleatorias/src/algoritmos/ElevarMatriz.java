@@ -22,8 +22,8 @@ package algoritmos;
  */
 public class ElevarMatriz extends Thread{
     
-    private int [][] matriz;
-    private int [][] potencia;
+    private double [][] matriz;
+    private double [][] potencia;
     private int n;
     
     /**
@@ -31,11 +31,11 @@ public class ElevarMatriz extends Thread{
      * @param matriz
      * @param n
      */
-    public ElevarMatriz(int [][] matriz, int n){
+    public ElevarMatriz(double [][] matriz, int n){
         
         this.matriz = matriz;
         this.n = n;
-        potencia = new int [n][n];
+        potencia = new double [n][n];
         
     }
     
@@ -55,7 +55,7 @@ public class ElevarMatriz extends Thread{
         elevarMatriz();
     }
     
-    public int[][] getPotencia(){
+    public double[][] getPotencia(){
         return potencia;
     }
     
