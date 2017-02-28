@@ -14,28 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package algoritmos;
+package utilitario;
 
 /**
  *
- * @author SPQR14
+ * @author Alberto I. Pico
  */
 public class Validar {
     
     private static boolean correcto;
-    private static double [] vector;
     
-    /**
-     * 
-     * @param vector 
-     */
-    public Validar(double [] vector){
-        
-        this.vector = vector;
-        
-    }
-    
-    public static boolean validar(){
+    public static boolean validarCR(double [] vector){
         int flag = 0;
         int sum = 0;
         correcto = false;
@@ -49,6 +38,17 @@ public class Validar {
             correcto = true;
         }else{
             //alerta
+        }
+        return correcto;
+    }
+    
+    public static boolean validarEntrada(double x){
+        correcto = false;
+        if(x > 1 && x < 0){
+            //alerta
+            correcto = false;
+        }else{
+            correcto = true;
         }
         return correcto;
     }
