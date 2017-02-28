@@ -23,13 +23,13 @@ package algoritmos;
 public class ElevarMatriz extends Thread{
     
     private int [][] matriz;
-    private int n;
     private int [][] potencia;
+    private int n;
     
     /**
      * 
      * @param matriz
-     * @param n 
+     * @param n
      */
     public ElevarMatriz(int [][] matriz, int n){
         
@@ -39,9 +39,14 @@ public class ElevarMatriz extends Thread{
         
     }
     
-    public static void elevarMatriz(){
+    public void elevarMatriz(){
         
-        
+        int x = 0;
+        while(x < n){
+            
+            
+            
+        }
         
     }
     
