@@ -20,6 +20,39 @@ package algoritmos;
  *
  * @author Alberto I. Pico
  */
-public class ElevarMatriz {
+public class ElevarMatriz extends Thread{
+    
+    private int [][] matriz;
+    private int n;
+    private int [][] potencia;
+    
+    /**
+     * 
+     * @param matriz
+     * @param n 
+     */
+    public ElevarMatriz(int [][] matriz, int n){
+        
+        this.matriz = matriz;
+        this.n = n;
+        potencia = new int [n][n];
+        
+    }
+    
+    public static void elevarMatriz(){
+        
+        
+        
+    }
+    
+    @Override
+    public void run(){
+        elevarMatriz();
+    }
+    
+    public int[][] getPotencia(){
+        return potencia;
+    }
+    
     
 }
