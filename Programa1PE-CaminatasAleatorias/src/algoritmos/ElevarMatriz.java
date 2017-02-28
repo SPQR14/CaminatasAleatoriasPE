@@ -44,7 +44,11 @@ public class ElevarMatriz extends Thread{
         int x = 0;
         while(x < n){
             
-            
+            for(int i = 0; i < matriz.length; i++){
+                for(int j = 0; j < matriz[i].length; j++){
+                    
+                }
+            }
             
         }
         
